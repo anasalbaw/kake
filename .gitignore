@@ -1,0 +1,11 @@
+!kake
+kake\*
+!kake\*.*
+# !kake\CoreAudioApi
+# !kake\Properties
+!kake.sln
+# !kake\bin\Debug\MainHook.dll
+# !kake\bin\Release\MainHook.dll
+# !kake\html
+# kake\html\new
+# kake\html\old

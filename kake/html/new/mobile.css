@@ -1,0 +1,177 @@
+html
+{ height:100%; }
+body
+{
+  background: #373737;
+  width:100%;
+  height:100%;
+  margin:0px;
+  min-width: 240px;
+  /*overflow:hidden;*/
+}
+
+#headerBarContainer
+{
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:100;
+  background: url('headerbg.png') 100% repeat-x;
+  width: 100%;
+  height: 30px;
+  text-align:center;
+  line-height:30px;
+  font-family: 'Century Gothic', Tahoma, Arial, sans-serif;
+  font-size: 16px;
+  font-weight:bold;
+  color: #2A2B2C;
+}
+
+#controlBarContainer
+{
+  bottom: 0;
+  position:absolute;
+  width:100%;
+  height: 41px;
+  background: url('controlbar.png') repeat-x;
+}
+
+#controlBar
+{
+  padding: 0px 0px 0px 10px;
+}
+
+#controlBar a
+{
+  display:block;
+  float:left;
+  margin: 9px 2px 4px 2px;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  cursor: default;
+}
+
+#controlBar a:active
+  { outline: none; }
+#controlBar a:focus
+  { outline: none; }
+
+#controlBar a#btnPrev
+  { background: url('nextprev.png') -50px 0px; }
+#controlBar a#btnPrev:active
+  { background-position: -75px 0px; }
+
+#controlBar a#btnPlayPause
+{
+	width:31px;
+	height:33px;
+	margin:5px 2px 0px 2px;
+	background: url('playpause.png') 0px 0px;
+}
+#controlBar a#btnPlayPause.play:active
+  { background-position: -31px 0px; }
+#controlBar a#btnPlayPause.pause
+  { background-position: -62px 0px; }
+#controlBar a#btnPlayPause.pause:active
+  { background-position: -93px 0px; }
+  
+#controlBar a#btnNext
+  { background: url('nextprev.png') 0px 0px; }
+#controlBar a#btnNext:active
+  { background-position: -25px 0px; }
+
+#controlBar .right
+{
+  display:block;
+  float:right;
+  width: 70px;
+}
+
+#controlBar .right a#btnShuffle
+{
+	width: 22px;
+	height: 18px;
+	margin: 12px 6px 11px 6px;
+	background: url('shuffle.png') 0px 0px;
+}
+#controlBar .right a#btnShuffle:active
+  { background-position: -22px 0px; }
+#controlBar .right a#btnShuffle.enabled
+  { background-position: -44px 0px; }
+#controlBar .right a#btnShuffle.enabled:active
+  { background-position: -66px 0px; }
+
+#controlBar .right a#btnRepeat
+{
+	width: 19px;
+	height: 18px;
+	margin-top: 12px;
+	background: url('repeat.png') 0px 0px;
+}
+#controlBar .right a#btnRepeat:active
+  { background-position: -19px 0px; }
+#controlBar .right a#btnRepeat.enabled
+  { background-position: -38px 0px; }
+#controlBar .right a#btnRepeat.enabled:active
+  { background-position: -57px 0px; }
+
+#pageContainer
+{
+  height: 100%;
+  width: 100%;
+  margin-top:-41px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:0;
+}
+
+#leftContainer
+{
+	position:relative;
+  display:block;
+  background: #474747;
+  float:left;
+  width: 100%;
+  margin: 0px -1px;
+  border-right: #292929 1px solid;
+  height: 100%;
+}
+#rightContainer
+  { display:none; }
+
+.bottom
+{
+  height:100%;
+	width: 100%;
+}
+
+#albumArt
+{
+	position:absolute;
+  border-top: 1px #303030 solid;
+	bottom:40px;
+	display: block;
+  width: 100%;
+	z-index:0;
+}
+
+#currentSongBar
+{
+	z-index:100;
+	display: block;
+  position: absolute;
+  background: url('songbg.png') 100% repeat-x;
+  height: 40px;
+  bottom:0px;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  opacity: 0.8;
+}
+
+#currentSongBar h3
+  { font-size: 12px; margin:5px 6px 0px 6px; }
+#currentSongBar h4
+  { font-size: 10px; margin:3px 6px 0px 6px; }

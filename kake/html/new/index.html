@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Spotify @ <!-- COMPUTER_NAME --></title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="headerBarContainer">
+			Spotify @ <!-- COMPUTER_NAME -->
+		</div>
+		<div id="pageContainer">
+			<div id="leftContainer">
+				<div class="bottom">
+          <img src="albumart.png" id="albumArt"/>
+          <div id="currentSongBar">
+            <h3><!-- CURRENT_SONG --></h3>
+            <h4><!-- CURRENT_ARTIST --></h4>
+          </div>
+				</div>
+			</div>
+			<div id="rightContainer">
+				
+			</div>
+		</div>
+		<div id="controlBarContainer">
+			<div id="controlBar">
+				<a href="prev" id="btnPrev" /></a>
+				<a href="playpause" id="btnPlayPause" class="play" /></a>
+				<a href="next" id="btnNext" /></a>
+				<div class="right">
+					<a href="shuffle" id="btnShuffle" /></a>
+					<a href="repeat" id="btnRepeat" class="enabled" /></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+      init();
+      $('#controlBar a').click(function(event){cmd($(this).attr('href'),event);return false;});
+		</script>
+	</body>
+</html>

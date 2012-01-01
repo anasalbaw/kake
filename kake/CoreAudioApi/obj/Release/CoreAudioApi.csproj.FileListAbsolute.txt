@@ -1,0 +1,15 @@
+C:\Users\Valtzu\documents\visual studio 2010\Projects\Spotify Live!\Spotify Live!\CoreAudioApi\bin\Release\CoreAudioApi.dll
+C:\Users\Valtzu\documents\visual studio 2010\Projects\Spotify Live!\Spotify Live!\CoreAudioApi\bin\Release\CoreAudioApi.pdb
+C:\Users\Valtzu\documents\visual studio 2010\Projects\Spotify Live!\Spotify Live!\CoreAudioApi\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Valtzu\documents\visual studio 2010\Projects\Spotify Live!\Spotify Live!\CoreAudioApi\obj\Release\CoreAudioApi.dll
+C:\Users\Valtzu\documents\visual studio 2010\Projects\Spotify Live!\Spotify Live!\CoreAudioApi\obj\Release\CoreAudioApi.pdb
+C:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\bin\Release\CoreAudioApi.dll
+C:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\bin\Release\CoreAudioApi.pdb
+C:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\obj\Release\CoreAudioApi.dll
+C:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\obj\Release\CoreAudioApi.pdb
+E:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\bin\Release\CoreAudioApi.dll
+E:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\bin\Release\CoreAudioApi.pdb
+E:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\obj\Release\ResolveAssemblyReference.cache
+E:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\obj\Release\CoreAudioApi.dll
+E:\Users\Valtzu\Documents\Visual Studio 2010\Projects\Kake for Spotify\Kake for Spotify\CoreAudioApi\obj\Release\CoreAudioApi.pdb

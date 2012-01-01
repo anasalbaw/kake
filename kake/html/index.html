@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Spotify @ <!-- COMPUTER_NAME --></title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="fader"></div>
+    <div id="queueURIcontainer" class="popup">
+      <h3>Queue by Spotify URI</h3>
+      <h4>only spotify:track:2c3d5d46d5416s5 styled links accepted</h4>
+      <input type="text" id="spotifyURI" />
+      <input type="button" value="Queue" id="btnQueueURI" />
+      <input type="button" value="Cancel" id="btnCancelURI" />
+    </div>
+    <div id="queueSearchContainer" class="popup">
+      <h3>Queue by Spotify Search</h3>
+      <h4>you can enter song name, artist, album or whatever</h4>
+      <input type="text" id="keywords" />
+      <input type="button" value="Search" id="btnSearch" />
+      <input type="button" value="Cancel" id="btnCancelSearch" />
+      <div id="searchError"></div>
+      <table id="searchResults">
+        <tr><th></th><th></th></tr>
+      </table>
+    </div>
+    <div id="outer">
+      <div id="inner">
+        <h1>Spotify @ <!-- COMPUTER_NAME --></h1>
+        <div id="queueBox">
+          Queue song by <a href="#" id="queueLinkURI">Spotify URI</a> or <a href="#" id="queueLinkSearch">search</a>
+        </div>
+        <div id="buttons">
+          <a id="btnPrev" href="prev"></a>
+          <a id="btnPlayPause" href="playpause" class="play"></a>
+          <a id="btnNext" href="next"></a>
+        </div>
+        <div id="volumeControls">
+          <a href="volume/down" class="b">-</a>
+          <span id="volumeBarDiv">
+            <span id="volumeBar"></span>
+            <span id="volumeBarBg"></span>
+          </span>
+          <a href="volume/up" class="b">+</a>
+          <a href="mute" id="muteButton">mute</a> 
+        </div>
+        <div id="error"></div>
+        <div id="nowplaying">
+          <h2>now playing:</h2>
+          <span id="queueInfo"></span>
+          <ul>
+            <li><span><!-- NOW_PLAYING --></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+			//<![[CDATA[[
+			document.body.onload = function()
+			{
+				$('.a, .b, #muteButton').click(function(){cmd($(this).attr('href'))});
+				$('#queueLinkURI, #btnCancelURI').click(toggleQueueURI);
+				$('#btnQueueURI').click(function(){queueURI($('#spotifyURI').val());toggleQueueURI();$('#spotifyURI').val('');});
+				$('#queueLinkSearch, #btnCancelSearch').click(toggleQueueSearch);
+				$('#btnSearch').click(function() {search($('#keywords').val());});
+				init();
+				$('#buttons a').click(function(event){cmd($(this).attr('href'),event);return false;});
+			}
+			//]]>
+    </script>
+  </body>
+</html>

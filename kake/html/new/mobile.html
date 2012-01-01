@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery.js" /></script>
+	</head>
+	<body>
+		<div id="headerBarContainer">
+			Spotify @ PELIKONE
+		</div>
+		<div id="pageContainer">
+			<div id="leftContainer">
+				<div class="bottom">
+          <img src="albumart.png" id="albumArt"/>
+          <div id="currentSongBar">
+            <h3>Galaxion 607</h3>
+            <h4>Ara</h4>
+          </div>
+				</div>
+			</div>
+			<div id="rightContainer">
+				
+			</div>
+		</div>
+		<div id="controlBarContainer">
+			<div id="controlBar">
+				<a href="prev" id="btnPrev" /></a>
+				<a href="play" id="btnPlayPause" class="play" /></a>
+				<a href="next" id="btnNext" /></a>
+				<div class="right">
+					<a href="shuffle" id="btnShuffle" /></a>
+					<a href="repeat" id="btnRepeat" class="enabled" /></a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#controlBar a').click(
+				function(event) {
+					if(event) event.preventDefault();
+					return false;
+					}
+				);
+		</script>
+	</body>
+</html>
